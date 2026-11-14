@@ -215,9 +215,10 @@
                     <h4 class="font-bold text-base text-white">Phillip Lisomona</h4>
                     <p class="text-xs text-red-400 font-medium mb-3">Gospel Artist & Producer</p>
                     <p class="text-xs text-slate-400 mb-4 leading-relaxed">Spreading the message of hope, faith, and inspiration through powerful gospel melodies and album releases.</p>
-                    <button onclick="openContactModal()" class="w-full py-2.5 rounded-xl bg-red-600 hover:bg-red-500 text-white text-xs font-bold uppercase transition-colors shadow-lg shadow-red-600/30 mb-2">
-                        Book / Contact Artist
-                    </button>
+                    <!-- UPDATED BOOKING BUTTON TO WHATSAPP REDIRECT -->
+                    <a href="https://wa.me/260971132818?text=Hello%20Phillip%20Lisomona,%20I%20would%20like%20to%20book%20you%20for%20an%20event%20/%20collaborate." target="_blank" class="block w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold uppercase transition-colors shadow-lg shadow-emerald-600/30 mb-2 text-center">
+                        <i class="fa-brands fa-whatsapp mr-1.5 text-sm"></i> Book via WhatsApp
+                    </a>
                     <a href="https://payzaapi.co.ke/pay/82eef11c52f06829" target="_blank" class="block w-full py-2.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold uppercase transition-colors shadow-lg shadow-amber-600/30 text-center">
                         Payza Album Checkout
                     </a>
@@ -262,17 +263,17 @@
                     </a>
                 </div>
 
-                <!-- Facebook Card -->
-                <div class="bg-slate-950/80 border border-slate-800 rounded-2xl p-6 text-center space-y-4 hover:border-red-500/50 transition-colors shadow-lg">
-                    <div class="w-12 h-12 rounded-2xl bg-red-600/20 text-red-500 flex items-center justify-center mx-auto text-xl shadow-inner">
-                        <i class="fa-brands fa-facebook"></i>
+                <!-- WhatsApp Card / Booking Redirect -->
+                <div class="bg-slate-950/80 border border-slate-800 rounded-2xl p-6 text-center space-y-4 hover:border-emerald-500/50 transition-colors shadow-lg">
+                    <div class="w-12 h-12 rounded-2xl bg-emerald-600/20 text-emerald-500 flex items-center justify-center mx-auto text-xl shadow-inner">
+                        <i class="fa-brands fa-whatsapp"></i>
                     </div>
                     <div>
-                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">Facebook Page</h4>
-                        <p class="text-sm font-bold text-white mt-1 truncate">Philliplisomona</p>
+                        <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider">WhatsApp Direct Booking</h4>
+                        <p class="text-sm font-bold text-white mt-1">+260 971 132 818</p>
                     </div>
-                    <a href="https://www.facebook.com/Philliplisomona" target="_blank" class="inline-block w-full py-2.5 bg-red-600 hover:bg-red-500 text-white rounded-xl text-xs font-bold uppercase transition-colors shadow-lg shadow-red-600/30">
-                        Visit Facebook
+                    <a href="https://wa.me/260971132818?text=Hello%20Phillip%20Lisomona,%20I%20would%20like%20to%20book%20you%20for%20an%20event." target="_blank" class="inline-block w-full py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-xl text-xs font-bold uppercase transition-colors shadow-lg shadow-emerald-600/30">
+                        Chat on WhatsApp
                     </a>
                 </div>
             </div>
@@ -326,7 +327,7 @@
             <div class="flex justify-center space-x-6 text-slate-400 text-sm">
                 <a href="https://www.facebook.com/Philliplisomona" target="_blank" class="hover:text-red-500 transition-colors"><i class="fa-brands fa-facebook"></i></a>
                 <a href="mailto:philliplisomonamusic@gmail.com" class="hover:text-red-500 transition-colors"><i class="fa-solid fa-envelope"></i></a>
-                <a href="tel:+260971132818" class="hover:text-red-500 transition-colors"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://wa.me/260971132818?text=Hello%20Phillip%20Lisomona,%20I%20would%20like%20to%20connect%20regarding%20your%20music." target="_blank" class="hover:text-red-500 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <p class="text-[10px] text-slate-600">Designed @LISOTECH INNOVATIONS.</p>
         </div>
@@ -334,12 +335,13 @@
 
     <!-- JAVASCRIPT LOGIC -->
     <script>
-        const albumsData = [
+                const albumsData = [
             {
                 id: "v1",
                 title: "Hena Ndileelela",
                 volume: "Volume 1",
                 img: "v1.jpg",
+                selar: "https://selar.com/jp66u77w10",
                 tracks: [
                     { title: "Hena Ndileelela ft Ashers Masempela & Orden Hamooya", duration: "3:45", sirc: "Hena-Ndileelela-ft-Ashers-Masempela-&-Orden-Hamooya.mp3" },
                     { title: "Tuyakuunka Phillip Lisomona", duration: "4:12", sirc: "Tuyakuunka-Phillip-Lisomona.mp3" },
@@ -356,6 +358,7 @@
                 title: "Katulyaambilila",
                 volume: "Volume 2",
                 img: "v2.jpg",
+                selar: "https://selar.com/5174w64166",
                 tracks: [
                     { title: "Katulyaambilila", duration: "4:00", sirc: "Katulyaambilila.mp3" },
                     { title: "Ndeelele kweenda mixdown", duration: "4:00", sirc: "Ndeelele-kweenda-mixdown.mp3" },
@@ -373,6 +376,7 @@
                 title: "Eyi Nyika",
                 volume: "Volume 3",
                 img: "v3.jpg",
+                selar: "https://selar.com/4hl16fs475",
                 tracks: [
                     { title: "Ndakulumba", duration: "4:00", sirc: "Ndakulumba.mp3" },
                     { title: "Phillip Lisomona ft Davies Mulaya Righteous Are You Lord", duration: "4:00", sirc: "Phillip-Lisomona-ft-Davies-Mulaya-Righteous-Are-You-Lord.mp3" },
@@ -391,6 +395,7 @@
                 title: "Nkukuli Nkomuzulilwa",
                 volume: "Volume 4",
                 img: "v4.jpg",
+                selar: "https://selar.com/896fz92d41",
                 tracks: [
                     { title: "Nyika Njotukede", duration: "4:00", sirc: "Nyika-Njotukede.mp3" },
                     { title: "Zioni Munzi", duration: "4:00", sirc: "Zioni-Munzi.mp3" },
@@ -409,6 +414,7 @@
                 title: "Ifisabo",
                 volume: "Volume 5",
                 img: "v5.jpg",
+                selar: "https://selar.com/257dwu14ya",
                 tracks: [
                     { title: "Phillip Lisomona Tuli fimuti", duration: "4:00", sirc: "Phillip-Lisomona-Tuli-fimuti.mp3" },
                     { title: "Phillip Lisomona Atunyamuke", duration: "4:00", sirc: "Phillip-Lisomona-Atunyamuke.mp3" },
@@ -428,6 +434,7 @@
                 title: "Praises to the Lord",
                 volume: "Volume 6",
                 img: "v6.jpg",
+                selar: "https://selar.com/695h6r1d52",
                 tracks: [
                     { title: "Jesu Ulandikwabilila", duration: "4:00", sirc: "Jesu-Ulandikwabilila.mp3" },
                     { title: "Praises to the Lord", duration: "4:00", sirc: "Praises-to-the-Lord.mp3" },
@@ -447,6 +454,7 @@
                 title: "Nkamuzhibe",
                 volume: "Volume 7",
                 img: "v7.jpg",
+                selar: "https://selar.com/i995692y25",
                 tracks: [
                     { title: "Nkamuzhibe", duration: "4:00", sirc: "Nkamuzhibe.mp3" },
                     { title: "Mbuli Jesu", duration: "4:00", sirc: "Mbuli-Jesu.mp3" },
@@ -470,25 +478,6 @@
         const audioElement = new Audio();
         let expandedAlbums = { v1: true, v3: true, v4: true, v5: true, v6: true, v7: true };
 
-        const API_URL = 'https://api.lipila.io/v1/endpoint';
-        const API_KEY = 'lsk_01a02b5c-7491-7740-b5c1-eb05a20f6683';
-
-        async function callApi() {
-            try {
-                const response = await fetch(API_URL, {
-                    method: 'GET',
-                    headers: {
-                        'Authorization': `Bearer ${API_KEY}`,
-                        'Content-Type': 'application/json'
-                    }
-                });
-                if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-                return await response.json();
-            } catch (error) {
-                console.warn('API call notice:', error.message);
-            }
-        }
-
         window.onload = function() {
             activePlaylist = albumsData.flatMap(album => album.tracks.map(t => ({
                 ...t,
@@ -499,7 +488,6 @@
             renderAlbums(albumsData);
             audioElement.addEventListener('timeupdate', updateProgress);
             audioElement.addEventListener('ended', nextTrack);
-            callApi();
         };
 
         function renderAlbums(list) {
@@ -527,9 +515,9 @@
                                 <p class="text-xs text-slate-300 font-medium">Phillip Lisomona • ${album.tracks.length} Tracks (Click to view tracklist)</p>
                             </div>
                             <div class="flex items-center space-x-2">
-                                <a href="https://payzaapi.co.ke/pay/82eef11c52f06829" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white px-4 py-2 rounded-xl text-xs font-bold transition-all shadow-lg shadow-amber-600/30 flex items-center space-x-1.5" title="Buy Album via Payza">
-                                    <i class="fa-solid fa-credit-card"></i>
-                                    <span>Buy Album (Payza)</span>
+                                <a href="${album.selar}" target="_blank" class="bg-amber-600 hover:bg-amber-500 text-white px-4 py-2 rounded-xl text-xs font-bold transition-all shadow-lg shadow-amber-600/30 flex items-center space-x-1.5" title="Buy Album on Selar">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span>Buy Album (Selar)</span>
                                 </a>
                                 <button onclick="toggleAlbumTracks('${album.id}')" class="bg-red-600/90 hover:bg-red-600 text-white px-3 py-2 rounded-xl text-xs font-bold transition-all shadow-lg shadow-red-600/40 flex items-center space-x-1">
                                     <span>${isExpanded ? 'Hide Tracks' : 'View Tracks'}</span>
@@ -692,10 +680,6 @@
 
         function toggleMobileMenu() {
             document.getElementById('mobileMenu').classList.toggle('hidden');
-        }
-
-        function openContactModal() {
-            // Contact modal handler
         }
 
         function openPreviewModal() {
